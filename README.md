@@ -139,6 +139,12 @@ This project is run locally and has no deployments yet.
 - Twitter: [@SantoshKonapp1](https://twitter.com/SantoshKonappa1)
 - LinkedIn: [@Santosh Konappanavar](https://www.linkedin.com/in/santosh-konappanavar/)
 
+- 👤 **Okpah Igbo**
+
+- GitHub: [@david30-maker](https://github.com/david30-maker)
+- Twitter: [@davidigbo1](https://twitter.com/davidigbo1)
+- LinkedIn: [davidigbo/](https://www.linkedin.com/in/davidigbo/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
