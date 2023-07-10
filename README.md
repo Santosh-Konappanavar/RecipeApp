@@ -175,7 +175,7 @@ If you like this project please give it a star and follow me.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank (Microverse)[https://github.com/microverseinc] for providing the learning support as well as all collaborators on this project.
+I would like to thank [Microverse](https://github.com/microverseinc) for providing the learning support as well as all collaborators on this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
