@@ -79,6 +79,24 @@ class RecipesController < ApplicationController
     redirect_to recipes_path
   end
 
+  def shopping_list
+    @recipes = Recipe.all
+    @missing_foods = Food.where.not(id: Food.joins(:recipes_foods)
+                                      .where(recipes_foods: { recipe_id: @recipes.pluck(:id) }))
+
+    @total_price = @missing_foods.sum(:price)
+  end
+
+  def public_recipes
+    @public_recipes = Recipe.where(public: true)
+    @public_recipes_with_total_price = {}
+
+    @public_recipes.each do |recipe|
+      total_price = recipe.foods.sum(:price)
+      @public_recipes_with_total_price[recipe] = total_price
+    end
+  end
+
   private
 
   def recipe_params
