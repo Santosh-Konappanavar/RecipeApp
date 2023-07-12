@@ -15,7 +15,7 @@
           <h3><%= recipe.name %></h3>
           <% if can?(:destroy, recipe) %>
             <%= form_with(model: recipe, method: :delete, url: recipe_path(recipe)) do |form| %>
-              <%= link_to 'Remove', recipe_path, class: 'delete-recipe-btn' %>
+              <%= form.submit 'Remove', class: 'delete-recipe-btn' %>
             <% end %>
           <% end %>
         </div>
