@@ -4,6 +4,7 @@ class Ability
   def initialize(user)
     user ||= User.new
     return unless user.present?
+
     can %i[read create], Recipe
 
     can %i[read create], Food
