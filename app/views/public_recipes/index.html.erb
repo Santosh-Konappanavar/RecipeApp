@@ -1,0 +1,23 @@
+<div class="recipes-page">
+  <div class="recipes-page-top">
+    <h1>Public recipes</h1>
+  </div>
+
+  <div class="recipes-list">
+    <% if @recipes.empty? %>
+      <h3>No public recipes</h3>
+    <% else %>
+      <% @recipes.each do |recipe| %>
+        <div class="recipe">
+          <h3>
+            <%= link_to recipe.name, recipe_path(recipe) %>
+          </h3>
+          <p>
+            by
+            <%= recipe.user.name %>
+          </p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

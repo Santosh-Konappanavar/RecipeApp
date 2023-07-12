@@ -1,0 +1,16 @@
+<div class="food-details">
+  <h2><%= food.name %></h2>
+  <hr />
+  <p><b>Measurement unit:</b> <%= food.measurement_unit %></p>
+  <p><b>Quantity:</b> <%= food.quantity %></p>
+  <p><b>Price:</b> $<%= food.price %></p>
+  <hr />
+  <div class="food-actions">
+    <% if can?(:edit, food) %>
+      <%= link_to "Edit", edit_food_path(food) %>
+    <% end %>
+    <% if can?(:destroy, food) %>
+      <%= button_to "Delete", food, method: :delete, class: "delete-btn" %></td>
+    <% end %>
+  </div>
+</div>

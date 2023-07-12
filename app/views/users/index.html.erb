@@ -1,9 +1,11 @@
 <h1>Users</h1>
-<% @users.each do |user| %>
-  <div>
-      <div><%= image_tag(user.photo, width: 100) %></div>
-      <%= link_to(user_path(user)) do %>
-      <div><%= user.name %></div>
-      <% end %>
-  </div>
-<% end %>
+<div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= link_to "Show this user", user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New user", new_user_path %>

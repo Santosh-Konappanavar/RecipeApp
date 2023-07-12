@@ -1,0 +1,91 @@
+<div class="recipe-details-page">
+  <h2> <%= @recipe.name%> </h2>
+  <h3>Details</h3>
+  
+  <div class="recipe-details">
+  <div class="recipe-prep-time_visibility">
+    <p>
+      <b>Preparation time:</b>
+      <%= @recipe.preparation_time %>
+      <% if @recipe.preparation_time == 1 %>
+        hour
+      <% else %>
+        hours
+      <%end%>
+    </p>
+    <div>
+      <% if can?(:toggle_public, @recipe) %>
+        <%= form_with(model: @recipe, url: toggle_public_recipe_path(@recipe), method: :patch) do |form| %>
+          <% if @recipe.public %>
+            <p>This recipe is public</p>
+            <%= form.submit 'Make Private', class: "visibility-switch" %>
+          <% else %>
+            <p>This recipe is private</p>
+            <%= form.submit 'Make Public', class: "visibility-switch" %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+  <div class="recipe-cooking-time">
+  <p>
+    <b>Cooking time:</b>
+    <%= @recipe.cooking_time %>
+    <% if @recipe.cooking_time == 1 %>
+      hour
+    <% else %>
+      hours
+    <%end%>
+  </p>
+</div>
+<div class="recipe-description">
+      <p>
+        <b>Steps:</b>
+        <br />
+        <br />
+        <%= @recipe.description %>
+      </p>
+    </div>
+
+    <div class="recipe-actions">
+      <% if can?(:add_ingredient, @recipe) %>
+        <%= button_to "General shopping list", shopping_list_index_path, method: :get %>
+      <% end %>
+      <% if can?(:add_ingredient, @recipe) %>
+        <%= button_to "Add Ingredient", recipe_add_ingredient_path(@recipe), method: :get %>
+      <% end %>
+    </div>
+
+    <hr />
+
+    <table class="foods-table">
+      <tr>
+        <th>Name</th>
+        <th>Measurement unit</th>
+        <th>Quantity</th>
+        <th>Unit price</th>
+        <th>Actions</th>
+        <th>View</th>
+      </tr>
+      <% @recipe.foods.each do |food| %>
+        <tr>
+          <td>
+            <%= food.name %>
+          </td>
+          <td><%= food.measurement_unit %></td>
+          <td><%= food.quantity %></td>
+          <td>$<%= food.price %></td>
+          <td>
+            <% if can?(:remove_ingredient, @recipe) %>
+              <%= form_with(model: food, url: recipe_remove_ingredient_path({recipe_id: @recipe.id, food_id: food.id}), method: :delete) do |form| %>
+                <%= form.submit 'Remove', class: "delete-btn" %>
+              <% end %>
+            <% end %>
+          </td>
+          <td><%= link_to "Show", food, class: "show-btn" %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+</div>
