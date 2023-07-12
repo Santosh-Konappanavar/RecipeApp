@@ -1,1 +1,3 @@
 <h1>Hi <%= current_user.name.upcase %>, Welcome to Our Recipe App!</h1>
+  <div><%= link_to 'Go List of users', users_path %> </div>
+ <div> <%= link_to 'Go to Profile', user_path(current_user) %></div>
