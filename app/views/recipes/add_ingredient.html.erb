@@ -1,0 +1,34 @@
+<div class="ingredients-page">
+  <h2>
+    Add Ingredients to your
+    <%= @recipe.name %>
+    recipe
+  </h2>
+
+  <table class="foods-table">
+    <tr>
+      <th>Name</th>
+      <th>Measurement unit</th>
+      <th>Quantity</th>
+      <th>Unit price</th>
+      <th>Actions</th>
+    </tr>
+    <% @foods.each do |food| %>
+      <% unless @recipe.foods.include?(food) %>
+        <tr>
+          <td>
+            <%= food.name %>
+          </td>
+          <td><%= food.measurement_unit %></td>
+          <td><%= food.quantity %></td>
+          <td>$<%= food.price %></td>
+          <td>
+            <%= form_with(model: food, url: recipe_create_ingredient_path({recipe_id: @recipe.id, food_id: food.id}), method: :put) do |form| %>
+              <%= form.submit 'Add Ingredient', class: "add-btn" %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    <% end %>
+  </table>
+</div>

@@ -1,0 +1,34 @@
+<div class="new-recipe-page">
+  <h2> Add a new recipe </h2>
+
+  <%= form_with(model: @recipe, url: recipes_path, method: :post ) do |f| %>
+
+    <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+  <%= f.label :preparation_time  %>
+  <%= f.number_field :preparation_time, step: '0.25', value: 0.25, min: 0.25,class: 'form-control' %>
+</div>
+
+<div class="field">
+<%= f.label :cooking_time  %>
+<%= f.number_field :cooking_time, step: '0.25', value: 0.25, min: 0.25,class: 'form-control' %>
+</div>
+
+<div class="field">
+<%= f.label :description  %>
+<%= f.text_area :description %>
+</div>
+
+<div class="field recipe-visibility">
+<%= f.check_box :public, checked_value: true, unchecked_value: false, class: 'form-check-input' %>
+<%= f.label :public  %>
+</div>
+
+
+<%= f.submit 'Save', class: 'btn btn-primary mb-3' %>
+<%end%>
+</div>
