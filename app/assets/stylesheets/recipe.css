@@ -44,3 +44,100 @@ p {
 .form-control {
   margin: auto;
 }
+
+.recipe-details-page {
+  border: 1px solid #000;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.recipe-details {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.recipe-prep-time_visibility {
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+}
+
+.visibility-switch {
+  margin-left: 8%;
+ 
+}
+
+.pre-time {
+  margin-right: 78%;
+  width: 100%;
+
+}
+
+.recipe-cooking-time {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px auto;}
+
+  .recipe-cooking-time {
+    margin-left: 0%;
+  }
+
+.co-time {
+  margin-right: 87%;
+}
+
+.recipe-description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.recipe-description p {
+  margin-right: 68%;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.recipe-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin-left: 11px;
+}
+
+.btn-recipe {
+  margin-left: 0%;
+  text-decoration: none;
+}
+
+.foods-table {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 98%;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.foods-table th,
+.foods-table td {
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+.foods-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.foods-table tr:hover {
+  background-color: #ddd;
+}
+
+.foods-table th {
+  background-color: #807d7d;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
