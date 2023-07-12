@@ -1,7 +1,9 @@
 <div class="recipes-page">
   <div class="recipes-page-top">
     <h1>My Recipes</h1>
+    <div class="btn-add">
     <%= link_to "+ ADD RECIPE", new_recipe_path %>
+    </div>
   </div>
   <div class="recipes-list">
   <% if @recipes.empty? %>
@@ -10,10 +12,10 @@
     <% @recipes.each do |recipe| %>
       <div class="recipe">
         <div class="recipe-left">
-          <h3><%= link_to recipe.name, recipe_path(recipe) %></h3>
+          <h3><%= recipe.name %></h3>
           <% if can?(:destroy, recipe) %>
             <%= form_with(model: recipe, method: :delete, url: recipe_path(recipe)) do |form| %>
-              <%= form.submit 'Delete this recipe', class: 'delete-recipe-btn' %>
+              <%= link_to 'Remove', recipe_path, class: 'delete-recipe-btn' %>
             <% end %>
           <% end %>
         </div>
