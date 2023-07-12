@@ -65,24 +65,19 @@ p {
 
 .visibility-switch {
   margin-left: 8%;
- 
 }
 
 .pre-time {
   margin-right: 78%;
   width: 100%;
-
 }
 
 .recipe-cooking-time {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 10px auto;}
-
-  .recipe-cooking-time {
-    margin-left: 0%;
-  }
+  margin: 10px auto;
+}
 
 .co-time {
   margin-right: 87%;
@@ -140,4 +135,3 @@ p {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-

@@ -1,17 +1,17 @@
 .shopping-list-page {
-    border: 1px solid #000;
-    width: 100%;
-    margin: auto;
-    text-align: center;
+  border: 1px solid #000;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .amount-total {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px auto;
 }
 
 .amount {
-    margin-right: 63%;
+  margin-right: 63%;
 }
