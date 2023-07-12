@@ -4,11 +4,9 @@
   
   <div class="recipe-details">
   <div class="recipe-prep-time_visibility">
-    <p>
-      <b>Preparation time:</b>
-      <%= @recipe.preparation_time %>
+    <p class="pre-time">
+      Preparation time: <%= @recipe.preparation_time %> hour
       <% if @recipe.preparation_time == 1 %>
-        hour
       <% else %>
         hours
       <%end%>
@@ -17,10 +15,10 @@
       <% if can?(:toggle_public, @recipe) %>
         <%= form_with(model: @recipe, url: toggle_public_recipe_path(@recipe), method: :patch) do |form| %>
           <% if @recipe.public %>
-            <p>This recipe is public</p>
+            <p></p>
             <%= form.submit 'Make Private', class: "visibility-switch" %>
           <% else %>
-            <p>This recipe is private</p>
+            <p></p>
             <%= form.submit 'Make Public', class: "visibility-switch" %>
           <% end %>
         <% end %>
@@ -28,11 +26,10 @@
     </div>
   </div>
   <div class="recipe-cooking-time">
-  <p>
-    <b>Cooking time:</b>
-    <%= @recipe.cooking_time %>
+  <p class="co-time">
+    Cooking time: <%= @recipe.cooking_time %> hour
     <% if @recipe.cooking_time == 1 %>
-      hour
+    
     <% else %>
       hours
     <%end%>
@@ -40,9 +37,7 @@
 </div>
 <div class="recipe-description">
       <p>
-        <b>Steps:</b>
-        <br />
-        <br />
+        Steps:
         <%= @recipe.description %>
       </p>
     </div>
@@ -52,7 +47,7 @@
         <%= button_to "General shopping list", shopping_list_index_path, method: :get %>
       <% end %>
       <% if can?(:add_ingredient, @recipe) %>
-         <%= button_to "Add Ingredient", add_ingredient_recipe_path(@recipe), method: :get %>
+         <%= button_to "Add Ingredient", add_ingredient_recipe_path(@recipe), method: :get, class: "btn-recipe" %>
       <% end %>
     </div>
 
