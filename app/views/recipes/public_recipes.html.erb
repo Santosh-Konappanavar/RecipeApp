@@ -1,0 +1,18 @@
+<h1>Public REcipes</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Total Price</th>
+        </tr>
+    </thead>
+    <tbody>
+       <% @public_recipes_with_total_prices.each do |recipe, total_price| %>
+        <tr>
+            <td><%= recipe.name %></td>
+            <td><%= number_to_currency(${@total_price}) %></td>
+        </tr>
+         <% end %>
+    </tbody>
+</table>
