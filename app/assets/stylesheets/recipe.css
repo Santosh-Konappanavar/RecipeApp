@@ -1,47 +1,46 @@
 .recipes-page {
-    border: 1px solid #000;
-    width: 50%;
-    margin: auto;
-    text-align: center;
+  border: 1px solid #000;
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
 
 .btn-add {
-    margin-left: 70%;
-    margin-bottom: 10px;
-    text-decoration: none;
+  margin-left: 70%;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .recipe {
-   display: flex;
-   justify-content: space-between;
-   border: #000 1px solid;
-   width: 90%;
-    margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  border: #000 1px solid;
+  width: 90%;
+  margin: 10px auto;
 }
 
 h3 {
-    margin: 5px;
+  margin: 5px;
 }
 
 p {
-    margin: 2px auto;
-    border: #fff 1px solid;
-    width: 80%;
-    padding: auto;
+  margin: 2px auto;
+  border: #fff 1px solid;
+  width: 80%;
 }
 
 .new-recipe-page {
-    border: 1px solid #000;
-    width: 50%;
-    margin: auto;
-    text-align: center;
+  border: 1px solid #000;
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
 
 .label {
-    display: block;
-    margin: 5px;
+  display: block;
+  margin: 5px;
 }
 
 .form-control {
-    margin: auto;
+  margin: auto;
 }
