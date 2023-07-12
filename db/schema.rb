@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_11_092441) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_12_135829) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,19 +27,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_11_092441) do
 
   create_table "recipe_foods", force: :cascade do |t|
     t.integer "quantity"
-    t.bigint "recipes_id"
-    t.bigint "foods_id"
+    t.bigint "recipe_id"
+    t.bigint "food_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["foods_id"], name: "index_recipe_foods_on_foods_id"
-    t.index ["recipes_id"], name: "index_recipe_foods_on_recipes_id"
+    t.index ["food_id"], name: "index_recipe_foods_on_food_id"
+    t.index ["recipe_id"], name: "index_recipe_foods_on_recipe_id"
   end
 
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.integer "preparation_time"
     t.integer "cooking_time"
-    t.string "description"
+    t.text "description"
     t.boolean "public"
     t.bigint "user_id"
     t.datetime "created_at", null: false
@@ -66,7 +66,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_11_092441) do
   end
 
   add_foreign_key "foods", "users"
-  add_foreign_key "recipe_foods", "foods", column: "foods_id"
-  add_foreign_key "recipe_foods", "recipes", column: "recipes_id"
+  add_foreign_key "recipe_foods", "foods"
+  add_foreign_key "recipe_foods", "recipes"
   add_foreign_key "recipes", "users"
 end
