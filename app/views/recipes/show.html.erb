@@ -52,7 +52,7 @@
         <%= button_to "General shopping list", shopping_list_index_path, method: :get %>
       <% end %>
       <% if can?(:add_ingredient, @recipe) %>
-        <%= button_to "Add Ingredient", recipe_add_ingredient_path(@recipe), method: :get %>
+         <%= button_to "Add Ingredient", add_ingredient_recipe_path(@recipe), method: :get %>
       <% end %>
     </div>
 
