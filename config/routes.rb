@@ -1,22 +1,20 @@
-# frozen_string_literal: true
-
 Rails.application.routes.draw do
-  get 'home/index'
-  devise_for :users, controllers: { registrations: 'registrations' , sessions: 'sessions' }
+  root 'home#index'
 
-  # Add the following route for signing out
-  delete '/sign_out', to: 'sessions#destroy', as: :custom_destroy_user_session
+  devise_for :users
 
-  devise_scope :user do
-    get 'login', to: 'devise/sessions#new', as: :custom_login
-    post 'login', to: 'devise/sessions#create', as: :custom_user_session
-
-    get 'registration', to: 'devise/registrations#new', as: :custom_registration
-    post 'registration', to: 'devise/registrations#create', as: :custom_user_registration
+  resources :users, only: [:show]
+  resources :foods
+  resources :recipes, except: [:update] do
+    member do
+      patch 'toggle_public'
+      get 'add_ingredient'
+      put 'create_ingredient'
+      delete 'remove_ingredient'
+    end
   end
 
+  resources :shopping_list, only: [:index]
 
-  resources :users, only: [:index, :show]
-
- root 'home#index'
+  resources :public_recipes, only: [:index]
 end
