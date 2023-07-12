@@ -9,6 +9,7 @@ class FoodsController < ApplicationController
   def show; end
 
   def new
+    @user = current_user
     @food = Food.new
   end
 
