@@ -67,6 +67,7 @@ p {
   background-color: #eee;
   border: none;
   color: #333;
+  border-radius: 100%;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
