@@ -21,9 +21,9 @@
 .amount-total > :nth-child(1) {
   margin: 0.5rem;
   text-align: left;
-} 
+}
 
 .amount-total > :nth-child(2) {
   margin: 0.5rem;
   text-align: right;
-} 
+}
