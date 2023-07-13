@@ -46,11 +46,8 @@ input[type="submit"] {
   margin-left: 40%;
 }
 
-.share-links {
+ a {
   width: 30%;
   margin-left: 40.5%;
-}
-.share-links a {
-  width: 100%;
   text-decoration: none;
 }
