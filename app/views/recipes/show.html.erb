@@ -1,3 +1,6 @@
+<%= javascript_include_tag 'toggle_button' %>
+
+
 <div class="recipe-details-page">
   <h2> <%= @recipe.name%> </h2>
   <h3>Details</h3>
@@ -12,18 +15,19 @@
       <%end%>
     </p>
     <div>
-      <% if can?(:toggle_public, @recipe) %>
-        <%= form_with(model: @recipe, url: toggle_public_recipe_path(@recipe), method: :patch) do |form| %>
-          <% if @recipe.public %>
-            <p></p>
-            <%= form.submit 'Make Private', class: "visibility-switch" %>
-          <% else %>
-            <p></p>
-            <%= form.submit 'Make Public', class: "visibility-switch" %>
-          <% end %>
-        <% end %>
+  <% if can?(:toggle_public, @recipe) %>
+    <%= form_with(model: @recipe, url: toggle_public_recipe_path(@recipe), method: :patch) do |form| %>
+      <% if @recipe.public %>
+        <%= form.hidden_field :public, value: false %>
+        <button type="checkbox" class="visibility-switch">Make Private</button>
+      <% else %>
+        <%= form.hidden_field :public, value: true %>
+        <button type="checkbox" class="visibility-switch">Make Public</button>
       <% end %>
-    </div>
+    <% end %>
+  <% end %>
+</div>
+
   </div>
   <div class="recipe-cooking-time">
   <p class="co-time">
