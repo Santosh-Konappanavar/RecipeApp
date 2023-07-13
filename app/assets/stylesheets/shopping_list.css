@@ -3,6 +3,11 @@
   width: 100%;
   margin: auto;
   text-align: center;
+  margin-top: 4%;
+}
+
+.shopping-list-page > h2 {
+  margin: auto;
 }
 
 .amount-total {
@@ -10,8 +15,15 @@
   justify-content: space-between;
   width: 100%;
   margin: 10px auto;
+  font-weight: 600;
 }
 
-.amount {
-  margin-right: 63%;
-}
+.amount-total > :nth-child(1) {
+  margin: 0.5rem;
+  text-align: left;
+} 
+
+.amount-total > :nth-child(2) {
+  margin: 0.5rem;
+  text-align: right;
+} 

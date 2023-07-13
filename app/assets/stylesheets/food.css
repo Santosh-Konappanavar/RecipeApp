@@ -3,17 +3,18 @@
   width: 50%;
   margin: auto;
   text-align: center;
+  margin-top: 4%;
 }
 
 .btn_new_food {
-  margin-left: 70%;
-  margin-bottom: 10px;
+  margin-left: 80%;
+  margin-bottom: 13px;
   text-decoration: none;
 }
 
 .foods-table {
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
+  min-width:100%;
   margin: auto;
   text-align: center;
   border-collapse: collapse;
@@ -22,7 +23,11 @@
 .foods-table th,
 .foods-table td {
   border: 1px solid #fff;
-  padding: 8px;
+  padding: 5px;
+}
+
+.show-btn, .delete-btn {
+  margin: auto;
 }
 
 .foods-table tr:nth-child(even) {
@@ -41,17 +46,48 @@
 }
 
 .food-form {
-  width: 100%;
-  margin: auto;
-  text-align: center;
+  width: 50%;
   border: #000 1px solid;
+  text-align: center;
+  margin: auto;
+  margin-top: 4%;
 }
 
-.field {
-  margin: 10px;
+.food-form > h2 {
+  margin: auto;
 }
 
-.label {
-  margin-right: 2px;
+.food-form > form {
+  width: 50%;
+  margin-left:15.5%;
 }
 
+.food-form > form  .btn-submit {
+  margin-left: 40%;
+}
+
+.show-food-page {
+  margin-top: 4%;
+}
+
+.food-actions {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: 600;
+}
+
+.food-actions > a {
+  margin-left: 10%;
+  width: 100px;
+}
+
+.food-actions > form {
+  margin-top: -10px;
+}
+
+.delete-btn {
+margin-right: 2rem;
+background-color: #4caf50;
+color: white;
+}

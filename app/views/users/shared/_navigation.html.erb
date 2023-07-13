@@ -1,8 +1,13 @@
+<div class="nav-main">
+      <div class="nav1">
+      <h3>RECIPE APP</h3>
+      </div>
 
-<nav>
+      <div class="nav2">
+      <nav>
   <ul class="nav-menu">
     <li><%= link_to 'Home', root_path %></li>
-     <li><%= link_to 'Sign in', new_user_session_path %></li>
+    <li><%= link_to 'Sign in', new_user_session_path %></li>
     <li><%= link_to 'Sign up', new_user_registration_path %></li>
     <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
     <li><%= link_to 'Food', foods_path %></li>
@@ -11,3 +16,6 @@
     <li><%= link_to 'Public_recipe', public_recipes_path %></li>
   </ul>
 </nav>
+      </div>
+</div>
+
