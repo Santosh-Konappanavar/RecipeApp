@@ -14,7 +14,7 @@
 
 .foods-table {
   font-family: Arial, Helvetica, sans-serif;
-  min-width:100%;
+  min-width: 100%;
   margin: auto;
   text-align: center;
   border-collapse: collapse;
@@ -26,7 +26,8 @@
   padding: 5px;
 }
 
-.show-btn, .delete-btn {
+.show-btn,
+.delete-btn {
   margin: auto;
 }
 
@@ -59,10 +60,10 @@
 
 .food-form > form {
   width: 50%;
-  margin-left:15.5%;
+  margin-left: 15.5%;
 }
 
-.food-form > form  .btn-submit {
+.food-form > form .btn-submit {
   margin-left: 40%;
 }
 
@@ -71,10 +72,10 @@
 }
 
 .food-actions {
-display: flex;
-justify-content: space-between;
-align-items: center;
-font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
 }
 
 .food-actions > a {
@@ -87,7 +88,7 @@ font-weight: 600;
 }
 
 .delete-btn {
-margin-right: 2rem;
-background-color: #4caf50;
-color: white;
+  margin-right: 2rem;
+  background-color: #4caf50;
+  color: white;
 }

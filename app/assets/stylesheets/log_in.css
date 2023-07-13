@@ -42,19 +42,19 @@ h2 {
 }
 
 input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 .log-link > link {
   margin-left: 40%;
 }
 
- a {
+a {
   width: 30%;
   margin-left: 40.5%;
   text-decoration: none;

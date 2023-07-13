@@ -44,7 +44,7 @@ p {
 
 .new-recipe-page > form {
   width: 50%;
-  margin-left:14.5%;
+  margin-left: 14.5%;
 }
 
 .label {
@@ -52,7 +52,7 @@ p {
   margin: 5px;
 }
 
-.new-recipe-page > form  .btn {
+.new-recipe-page > form .btn {
   margin-left: 40%;
 }
 
@@ -160,5 +160,5 @@ p {
 }
 
 .button_to {
-  margin-top:1rem ;
+  margin-top: 1rem;
 }
