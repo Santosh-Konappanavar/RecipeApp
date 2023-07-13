@@ -52,9 +52,12 @@ p {
   text-align: center;
 }
 
+.recipe_h2 {
+  margin: 10px;
+}
+
 .recipe-details {
-  width: 100%;
-  margin: 10px auto;
+  margin: 10px;
 }
 
 .recipe-prep-time_visibility {
@@ -67,7 +70,7 @@ p {
   width: 30%;
   border: 1px solid #000;
   border-radius: 10px;
-  background-color: rgb(65, 105, 5);
+  background-color: green;
 }
 
 .visibility-switch {
@@ -90,7 +93,7 @@ p {
 }
 
 .pre-time {
-  margin-right: 78%;
+  margin-right: 80%;
   width: 100%;
 }
 
