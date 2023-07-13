@@ -78,3 +78,11 @@ end
 gem 'devise', '~> 4.9'
 
 gem 'cancancan'
+
+gem 'rspec'
+
+gem 'rspec-rails'
+
+gem 'rails-controller-testing'
+
+gem 'rspec-support', '3.12.1'
