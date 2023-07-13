@@ -74,10 +74,9 @@ p {
 }
 
 .visibility-switch {
-  background-color: #eee;
   border: none;
-  color: #333;
-  border-radius: 100%;
+  color: #eee;
+  border-radius: 50%;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -88,7 +87,6 @@ p {
 }
 
 .visibility-switch.active {
-  background-color: #555;
   color: #fff;
 }
 
