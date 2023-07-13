@@ -14,15 +14,15 @@
         hours
       <%end%>
     </p>
-    <div>
+    <div class="toggle-btn">
   <% if can?(:toggle_public, @recipe) %>
     <%= form_with(model: @recipe, url: toggle_public_recipe_path(@recipe), method: :patch) do |form| %>
       <% if @recipe.public %>
         <%= form.hidden_field :public, value: false %>
-        <button type="checkbox" class="visibility-switch">Make Private</button>
+        <button type="button" class="visibility-switch"></button>
       <% else %>
         <%= form.hidden_field :public, value: true %>
-        <button type="checkbox" class="visibility-switch">Make Public</button>
+        <button type="button" class="visibility-switch"></button>
       <% end %>
     <% end %>
   <% end %>
