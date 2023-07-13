@@ -63,6 +63,13 @@ p {
   width: 98%;
 }
 
+.toggle-btn {
+  width: 30%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: rgb(65, 105, 5);
+}
+
 .visibility-switch {
   background-color: #eee;
   border: none;
