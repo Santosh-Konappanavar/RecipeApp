@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       put 'create_ingredient'
       delete 'remove_ingredient'
     end
+    get 'add_ingredient', to: 'recipes#add_ingredient'
   end
 
   resources :shopping_list, only: [:index]
