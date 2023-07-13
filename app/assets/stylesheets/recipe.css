@@ -66,14 +66,14 @@ p {
   width: 98%;
 }
 
-.toggle-btn {
+/* .toggle-btn {
   width: 30%;
   border: 1px solid #000;
   border-radius: 10px;
   background-color: green;
-}
+} */
 
-.visibility-switch {
+/* .visibility-switch {
   border: none;
   color: #eee;
   border-radius: 50%;
@@ -84,7 +84,7 @@ p {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-}
+} */
 
 .visibility-switch.active {
   color: #fff;
