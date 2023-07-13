@@ -1,15 +1,13 @@
 <div class="shopping-list-page">
   <h2>My Shoppping List</h2>
-
-  <p>
-    <b>Amount of food items to buy:</b>
-    <%= @list.count %>
+<div class="amount-total">
+  <p class="amount">
+    Amount of food items to buy: <%= @list.count %>
   </p>
   <p>
-    <b>Total value of food needed: $</b>
-    <%= @total_food_value %>
+    Total value of food needed: $<%= @total_food_value %>
   </p>
-
+ </div>
   <table class="foods-table">
     <tr>
       <th>Food</th>

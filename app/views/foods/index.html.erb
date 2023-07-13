@@ -22,7 +22,7 @@
         <td class="table_data">$<%= food.price %></td>
         <td class="table_data">
           <% if can?(:destroy, food) %>
-            <%= button_to "Delete", food, method: :delete, class: "delete-btn" %>
+            <%= link_to "Delete", food, method: :delete, class: "delete-btn" %>
           <% end %>
         </td>
         <td class="table_data"><%= link_to "Show", food, class: "show-btn" %></td>
