@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# Migration to create the Foods table.
+
 class CreateFoods < ActiveRecord::Migration[7.0]
   def change
     create_table :foods do |t|
