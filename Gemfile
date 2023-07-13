@@ -84,3 +84,5 @@ gem 'rspec'
 gem 'rspec-rails'
 
 gem 'rails-controller-testing'
+
+gem 'rspec-support', '3.12.1'
