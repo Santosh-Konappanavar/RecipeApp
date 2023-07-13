@@ -10,7 +10,7 @@ AllCops:
 
   DisplayCopNames: true
 
-  Layout/LineLength:
+Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
   Include:
@@ -28,7 +28,7 @@ Metrics/BlockLength:
   AllowedMethods: ['describe']
   Max: 30
 
-  Style/Documentation:
+Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
@@ -41,7 +41,7 @@ Style/DefWithParentheses:
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
-  Layout/HashAlignment:
+Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
   AllowForAlignment: false
