@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     end
     get 'add_ingredient', to: 'recipes#add_ingredient'
   end
+  resources :ingredients, except: [:update]
 
   resources :shopping_list, only: [:index]
 
