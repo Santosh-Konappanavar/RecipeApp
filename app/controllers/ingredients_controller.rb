@@ -4,9 +4,9 @@ class IngredientsController < ApplicationController
         @ingredients = Ingredient.all
     end
 
-    def show
-        @ingredient = Ingredient.find(params[:id])
-    end
+    # def show
+    #     @ingredient = Ingredient.find(params[:id])
+    # end
 
     def def new
         @ingredient = Ingredient.new
