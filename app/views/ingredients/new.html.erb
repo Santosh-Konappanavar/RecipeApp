@@ -1,0 +1,28 @@
+<div class="ingredient-form">
+<h1>New Ingredient</h1>
+
+<%= form_with(model: @ingredient, url: ingredients_path, method: :post) do |form| %>
+  <div>
+    <%= form.label :name %>:
+    <%= form.text_field :name, class: "input-ingredient" %>
+  </div>
+
+  <div>
+    <%= form.label :description, class: "label-ingre" %>:
+    <%= form.text_area :description, class: "input-ingredient" %>
+  </div>
+
+  <div>
+    <%= form.label :category %>:
+    <%= form.text_field :category, class: "input-ingredient" %>
+  </div>
+
+  <div>
+    <%= form.label :measurement_unit %>:
+    <%= form.text_field :measurement_unit, class: "input-ingredient" %>
+  </div>
+
+  <div>
+    <%= form.submit 'Save', class: "btn-submit" %>
+  </div>
+<% end %>
