@@ -1,0 +1,164 @@
+.recipes-page {
+  border: 1px solid #000;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.btn-add {
+  margin-left: 45%;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.recipe {
+  display: flex;
+  justify-content: space-between;
+  border: #000 1px solid;
+  width: 90%;
+  margin: 10px auto;
+}
+
+h3 {
+  margin: 5px;
+}
+
+p {
+  margin: 2px auto;
+  border-bottom: rgb(241, 240, 240) 2px solid;
+  width: 80%;
+}
+
+.new-recipe-page {
+  border: 1px solid #000;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.new-recipe-page > h2 {
+  margin: auto;
+}
+
+.new-recipe-page > form {
+  width: 50%;
+  margin-left: 14.5%;
+}
+
+.label {
+  display: block;
+  margin: 5px;
+}
+
+.new-recipe-page > form .btn {
+  margin-left: 40%;
+}
+
+.form-control {
+  margin: auto;
+}
+
+.delete-recipe-btn {
+  margin: 0.5rem;
+}
+
+.recipe-details-page {
+  border: 1px solid #000;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.recipe_h2 {
+  margin: 10px;
+}
+
+.recipe-details {
+  margin: 10px;
+}
+
+.recipe-prep-time_visibility {
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+  align-items: center;
+}
+
+.pre-time {
+  margin-right: 70%;
+  height: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+.recipe-cooking-time {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.co-time {
+  margin-right: 75%;
+  text-align: left;
+}
+
+.recipe-description {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.recipe-description p {
+  margin-right: 68%;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.recipe-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin-left: 11px;
+}
+
+.btn-recipe {
+  margin-left: 0%;
+  text-decoration: none;
+}
+
+.foods-table {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 98%;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.foods-table th,
+.foods-table td {
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+.foods-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.foods-table tr:hover {
+  background-color: #ddd;
+}
+
+.foods-table th {
+  background-color: #807d7d;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.button_to {
+  margin-top: 1rem;
+}

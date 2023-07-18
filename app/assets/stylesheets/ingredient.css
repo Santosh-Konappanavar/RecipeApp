@@ -1,0 +1,79 @@
+.ingredient-container {
+  width: 100%;
+  margin-top: 100px;
+  border: 1px solid #000;
+}
+
+.ingredient-container h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.ingredient-table {
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.ingredient-table th,
+.ingredient-table td {
+  border: 1px solid #fff;
+  padding: 5px;
+}
+
+.ingredient-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.ingredient-table tr:hover {
+  background-color: #ddd;
+}
+
+.ingredient-table th {
+  background-color: #807d7d;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.ingredient-container a {
+  text-decoration: none;
+  margin-left: 90%;
+  margin-bottom: 40px;
+}
+
+.ingredient-container a:hover {
+  text-decoration: underline;
+}
+
+.ingredient-form {
+  width: 50%;
+  border: #000 1px solid;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 25%;
+}
+
+.ingredient-form > h1 {
+  margin: auto;
+}
+
+.ingredient-form > form {
+  width: 50%;
+  margin-left: 15.5%;
+}
+
+.input-ingredient {
+  margin: 5px;
+  padding: 5px;
+}
+
+.ingredient-form > form .btn-submit {
+  margin-left: 40%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

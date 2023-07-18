@@ -1,0 +1,24 @@
+<div class="ingredient-container">
+<h1>Ingredients</h1>
+
+<%= link_to 'Add Ingredient', new_ingredient_path %>
+
+<table class="ingredient-table">
+
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th>Measurement Unit</th>
+    </tr>
+    
+    <% @ingredients.each do |ingredient| %>
+      <tr>
+        <td><%= ingredient.name %></td>
+        <td><%= ingredient.description %></td>
+        <td><%= ingredient.category %></td>
+        <td><%= ingredient.measurement_unit %></td>
+      </tr>
+    <% end %>
+</table>
+</div>

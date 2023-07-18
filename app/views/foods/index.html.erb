@@ -1,0 +1,32 @@
+<div class="foods-page">
+  <div class="foods-page-top">
+    <h1 class="food_title">My Foods</h1>
+    <%= link_to "+ ADD FOOD", new_food_path, class: "btn_new_food" %>
+  </div>
+  <table class="foods-table">
+    <tr>
+      <th>Name</th>
+      <th>Measurement unit</th>
+      <th>Quantity</th>
+      <th>Unit price</th>
+      <th>Actions</th>
+      <th>View</th>
+    </tr>
+    <% @foods.each do |food| %>
+      <tr>
+        <td class="table_data">
+          <%= food.name %>
+        </td>
+        <td class="table_data"><%= food.measurement_unit %></td>
+        <td class="table_data"><%= food.quantity %></td>
+        <td class="table_data">$<%= food.price %></td>
+        <td class="table_data">
+          <% if can?(:destroy, food) %>
+            <%= link_to "Delete", food, method: :delete, class: "delete-btn" %>
+          <% end %>
+        </td>
+        <td class="table_data"><%= link_to "Show", food, class: "show-btn" %></td>
+      </tr>
+    <% end %>
+  </table>
+  </div>
